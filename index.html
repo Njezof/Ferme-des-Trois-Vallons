@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferme des Trois Vallons</title>
+    <!-- Tailwind CSS pour un design moderne et rapide -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome pour de magnifiques icônes d'agriculture et de nature -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Police d'écriture élégante pour un style terroir et soigné -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stone-50 font-sans text-stone-800 antialiased">
+
+    <!-- En-tête / Hero Section -->
+    <header class="relative bg-emerald-950 text-white overflow-hidden min-h-[80vh] flex items-center">
+        <!-- Arrière-plan décoratif à motifs naturels (sans images externes risquant de casser) -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 bg-[radial-gradient(#34d399_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        </div>
+        <!-- Dégradé chaleureux -->
+        <div class="absolute inset-0 bg-gradient-to-tr from-emerald-950 via-emerald-900 to-emerald-800 opacity-95"></div>
+
+        <div class="relative z-10 max-w-6xl mx-auto px-4 py-20 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-800/60 border border-emerald-600/50 text-emerald-200 mb-8 text-sm font-medium tracking-wide">
+                <i class="fa-solid fa-leaf text-emerald-400"></i>
+                <span>Depuis 1958 • Trois générations de passion</span>
+            </div>
+            
+            <h1 class="text-5xl sm:text-7xl font-bold tracking-tight mb-6 font-serif text-white drop-shadow-sm">
+                Ferme des Trois Vallons
+            </h1>
+            
+            <p class="text-xl sm:text-2xl max-w-3xl mx-auto text-emerald-100 font-light mb-12 leading-relaxed">
+                Une tradition familiale au service de la terre, cultivée avec respect et modernité.
+            </p>
+            
+            <div class="inline-block bg-emerald-900/40 backdrop-blur-sm border border-emerald-700/50 px-8 py-4 rounded-2xl">
+                <p class="text-lg italic text-amber-200 font-serif">
+                    « Cultiver aujourd'hui, nourrir demain. »
+                </p>
+            </div>
+        </div>
+
+        <!-- Courbe de transition douce en bas du Hero -->
+        <div class="absolute bottom-0 left-0 right-0 h-12 bg-stone-50" style="clip-path: ellipse(60% 100% at 50% 100%);"></div>
+    </header>
+
+    <!-- Présentation & Vision -->
+    <section class="py-16 sm:py-24 max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- Histoire -->
+            <div class="space-y-6">
+                <div class="flex items-center gap-3">
+                    <span class="p-3 bg-emerald-100 text-emerald-700 rounded-2xl">
+                        <i class="fa-solid fa-clock-rotate-left text-xl"></i>
+                    </span>
+                    <h2 class="text-3xl font-bold text-stone-900 font-serif">Notre Histoire</h2>
+                </div>
+                <p class="text-stone-600 leading-relaxed">
+                    La Ferme des Trois Vallons est une exploitation agricole familiale fondée en 1958 par la famille Morel. Située dans une région rurale fertile, elle est spécialisée dans la culture céréalière, la production de pastèques et l'élevage de bovins et de porcs.
+                </p>
+                <p class="text-stone-600 leading-relaxed">
+                    Transmise de génération en génération, la ferme a su moderniser ses méthodes de production tout en conservant les valeurs qui ont fait sa réputation : le travail, la qualité et le respect constant de notre terroir.
+                </p>
+                <div class="border-l-4 border-emerald-600 pl-4 py-2 bg-emerald-50/50 rounded-r-xl">
+                    <p class="text-stone-700 font-medium italic">
+                        Aujourd'hui, la Ferme des Trois Vallons constitue l'une des exploitations familiales les plus reconnues de sa région.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Carte de Vision -->
+            <div class="bg-gradient-to-br from-amber-50 to-orange-50/50 rounded-3xl p-8 sm:p-10 border border-amber-100 shadow-sm relative overflow-hidden">
+                <div class="absolute -top-10 -right-10 text-amber-200/20 text-9xl">
+                    <i class="fa-solid fa-wheat-awn"></i>
+                </div>
+                <div class="relative z-10 space-y-4">
+                    <span class="inline-block p-3 bg-amber-100 text-amber-700 rounded-2xl mb-2">
+                        <i class="fa-solid fa-eye text-xl"></i>
+                    </span>
+                    <h3 class="text-2xl font-bold text-amber-900 font-serif">Notre Vision</h3>
+                    <p class="text-amber-800/90 leading-relaxed text-lg">
+                        Développer une agriculture familiale moderne, productive et responsable tout en conservant précieusement le savoir-faire agricole transmis depuis plusieurs générations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chiffres Clés -->
+    <section class="py-16 sm:py-20 bg-emerald-900 text-white relative">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center font-serif text-emerald-100">L'exploitation en quelques chiffres</h2>
+            
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                <!-- Chiffre 1 -->
+                <div class="p-6 bg-emerald-800/40 rounded-2xl border border-emerald-700/50 text-center hover:border-emerald-500/50 transition-all duration-300">
+                    <div class="text-amber-400 text-3xl mb-3"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <div class="text-4xl sm:text-5xl font-extrabold mb-2 font-serif text-white">850</div>
+                    <div class="text-emerald-200 text-xs sm:text-sm uppercase tracking-wider font-semibold">Hectares exploités</div>
+                </div>
+                <!-- Chiffre 2 -->
+                <div class="p-6 bg-emerald-800/40 rounded-2xl border border-emerald-700/50 text-center hover:border-emerald-500/50 transition-all duration-300">
+                    <div class="text-amber-400 text-3xl mb-3"><i class="fa-solid fa-users"></i></div>
+                    <div class="text-4xl sm:text-5xl font-extrabold mb-2 font-serif text-white">28</div>
+                    <div class="text-emerald-200 text-xs sm:text-sm uppercase tracking-wider font-semibold">Employés qualifiés</div>
+                </div>
+                <!-- Chiffre 3 -->
+                <div class="p-6 bg-emerald-800/40 rounded-2xl border border-emerald-700/50 text-center hover:border-emerald-500/50 transition-all duration-300">
+                    <div class="text-amber-400 text-3xl mb-3"><i class="fa-solid fa-cow"></i></div>
+                    <div class="text-4xl sm:text-5xl font-extrabold mb-2 font-serif text-white">750</div>
+                    <div class="text-emerald-200 text-xs sm:text-sm uppercase tracking-wider font-semibold">Têtes de bovins</div>
+                </div>
+                <!-- Chiffre 4 -->
+                <div class="p-6 bg-emerald-800/40 rounded-2xl border border-emerald-700/50 text-center hover:border-emerald-500/50 transition-all duration-300">
+                    <div class="text-amber-400 text-3xl mb-3"><i class="fa-solid fa-piggy-bank"></i></div>
+                    <div class="text-4xl sm:text-5xl font-extrabold mb-2 font-serif text-white">2 500</div>
+                    <div class="text-emerald-200 text-xs sm:text-sm uppercase tracking-wider font-semibold">Porcs</div>
+                </div>
+            </div>
+
+            <!-- Productions Annuelles -->
+            <div class="mt-12 grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <div class="flex items-center justify-between p-6 bg-emerald-950/40 rounded-2xl border border-emerald-800/60">
+                    <div class="flex items-center gap-4">
+                        <span class="text-amber-400 text-2xl"><i class="fa-solid fa-wheat-awn"></i></span>
+                        <span class="text-lg font-medium text-emerald-100">Production de blé</span>
+                    </div>
+                    <span class="text-2xl font-bold text-amber-300">5 000 t / an</span>
+                </div>
+                
+                <div class="flex items-center justify-between p-6 bg-emerald-950/40 rounded-2xl border border-emerald-800/60">
+                    <div class="flex items-center gap-4">
+                        <span class="text-red-400 text-2xl"><i class="fa-solid fa-watermelon-slice"></i></span>
+                        <span class="text-lg font-medium text-emerald-100">Production de pastèques</span>
+                    </div>
+                    <span class="text-2xl font-bold text-red-300">1 200 t / an</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activités Agricoles -->
+    <section class="py-20 max-w-6xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <span class="text-emerald-600 font-bold uppercase tracking-widest text-sm">Ce que nous faisons</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-stone-900 mt-2 font-serif">Nos Activités Agricoles</h2>
+            <div class="w-16 h-1 bg-emerald-600 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <!-- Culture du blé -->
+            <div class="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden flex flex-col justify-between">
+                <div>
+                    <div class="p-8 bg-amber-50/50 border-b border-stone-100 flex items-center justify-between">
+                        <h3 class="text-2xl font-bold text-stone-900 font-serif flex items-center gap-3">
+                            <span class="text-amber-600"><i class="fa-solid fa-wheat-awn"></i></span>
+                            Culture du blé
+                        </h3>
+                        <span class="text-xs bg-amber-100 text-amber-800 font-bold px-3 py-1 rounded-full uppercase">Céréale Majeure</span>
+                    </div>
+                    <div class="p-8">
+                        <p class="text-stone-600 mb-6 font-medium">Le blé représente l’une des principales productions de l’exploitation.</p>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="text-xs font-bold text-stone-400 uppercase tracking-wider mb-3">Gamme Production</h4>
+                                <ul class="space-y-2 text-stone-600 text-sm">
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-right text-amber-500 text-xs"></i> Blé tendre & dur</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-right text-amber-500 text-xs"></i> Semences sélectionnées</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-right text-amber-500 text-xs"></i> Minoterie & Industrie</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-stone-400 uppercase tracking-wider mb-3">Nos Objectifs</h4>
+                                <ul class="space-y-2 text-stone-600 text-sm">
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-xs"></i> Qualité constante</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-xs"></i> Rendements élevés</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-xs"></i> Respect des sols</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Production de pastèques -->
+            <div class="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden flex flex-col justify-between">
+                <div>
+                    <div class="p-8 bg-red-50/30 border-b border-stone-100 flex items-center justify-between">
+                        <h3 class="text-2xl font-bold text-stone-900 font-serif flex items-center gap-3">
+                            <span class="text-red-500"><i class="fa-solid fa-watermelon-slice"></i></span>
+                            Production de pastèques
+                        </h3>
+                        <span class="text-xs bg-red-100 text-red-800 font-bold px-3 py-1 rounded-full uppercase">Saisonnier</span>
+                    </div>
+                    <div class="p-8">
+                        <p class="text-stone-600 mb-6 font-medium">La ferme consacre plusieurs hectares à la culture de pastèques savoureuses.</p>
+                        
+                        <div class="bg-stone-50 p-6 rounded-2xl border border-stone-100">
+                            <h4 class="text-xs font-bold text-stone-400 uppercase tracking-wider mb-3">Caractéristiques de culture</h4>
+                            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-stone-600 text-sm">
+                                <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-red-400"></span> Variétés sélectionnées pour le goût</li>
+                                <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-red-400"></span> Production de saison</li>
+                                <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-red-400"></span> Récolte manuelle & mécanique</li>
+                                <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-red-400"></span> Distribution nationale</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Élevage bovin -->
+            <div class="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden">
+                <div class="p-8 bg-stone-100/50 border-b border-stone-100 flex items-center justify-between">
+                    <h3 class="text-2xl font-bold text-stone-900 font-serif flex items-center gap-3">
+                        <span class="text-stone-600"><i class="fa-solid fa-cow"></i></span>
+                        Élevage bovin
+                    </h3>
+                    <span class="text-xs bg-stone-200 text-stone-800 font-bold px-3 py-1 rounded-full uppercase">Qualité Supérieure</span>
+                </div>
+                <div class="p-8 space-y-6">
+                    <p class="text-stone-600 font-medium">La ferme élève plusieurs centaines de bovins sous suivi rigoureux.</p>
+                    
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div class="bg-emerald-50/30 p-4 rounded-xl border border-emerald-100/50">
+                            <h4 class="text-sm font-bold text-emerald-900 mb-2">Troupeau de vaches</h4>
+                            <ul class="space-y-1 text-xs text-stone-600">
+                                <li>• Vaches reproductrices</li>
+                                <li>• Production de veaux de qualité</li>
+                                <li>• Sélection génétique de pointe</li>
+                                <li>• Suivi vétérinaire permanent</li>
+                            </ul>
+                        </div>
+                        <div class="bg-amber-50/30 p-4 rounded-xl border border-amber-100/50">
+                            <h4 class="text-sm font-bold text-amber-900 mb-2">Production de bœufs</h4>
+                            <ul class="space-y-1 text-xs text-stone-600">
+                                <li>• Conditions de bien-être animal</li>
+                                <li>• Croissance naturelle maîtrisée</li>
+                                <li>• Alimentation issue de la ferme</li>
+                                <li>• Viande de qualité supérieure</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Élevage porcin -->
+            <div class="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden flex flex-col justify-between">
+                <div>
+                    <div class="p-8 bg-pink-50/30 border-b border-stone-100 flex items-center justify-between">
+                        <h3 class="text-2xl font-bold text-stone-900 font-serif flex items-center gap-3">
+                            <span class="text-pink-500"><i class="fa-solid fa-pig"></i></span>
+                            Élevage porcin
+                        </h3>
+                        <span class="text-xs bg-pink-100 text-pink-800 font-bold px-3 py-1 rounded-full uppercase">Traçabilité</span>
+                    </div>
+                    <div class="p-8">
+                        <p class="text-stone-600 mb-6 font-medium">Une importante activité porcine soumise aux plus hauts standards de contrôle.</p>
+                        
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3 bg-stone-50 p-3 rounded-xl border border-stone-100">
+                                <span class="text-pink-500"><i class="fa-solid fa-shield-halved"></i></span>
+                                <span class="text-sm text-stone-700">Élevage de porcs charcutiers & Reproduction</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-stone-50 p-3 rounded-xl border border-stone-100">
+                                <span class="text-pink-500"><i class="fa-solid fa-plate-wheat"></i></span>
+                                <span class="text-sm text-stone-700">Alimentation contrôlée & équilibrée</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-stone-50 p-3 rounded-xl border border-stone-100">
+                                <span class="text-pink-500"><i class="fa-solid fa-barcode"></i></span>
+                                <span class="text-sm text-stone-700">Traçabilité complète et transparente de chaque animal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Infrastructures & Équipements -->
+    <section class="py-20 bg-stone-900 text-stone-300 relative">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-16">
+                
+                <!-- Infrastructures -->
+                <div>
+                    <div class="flex items-center gap-3 mb-8">
+                        <span class="p-3 bg-emerald-950 text-emerald-400 rounded-xl">
+                            <i class="fa-solid fa-warehouse text-xl"></i>
+                        </span>
+                        <h2 class="text-3xl font-bold text-white font-serif">Infrastructures</h2>
+                    </div>
+                    <ul class="grid gap-3">
+                        <li class="flex items-center gap-3 p-3 bg-stone-800/60 rounded-xl border border-stone-800 text-stone-200">
+                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0"></span>
+                            Silos à céréales haute capacité
+                        </li>
+                        <li class="flex items-center gap-3 p-3 bg-stone-800/60 rounded-xl border border-stone-800 text-stone-200">
+                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0"></span>
+                            Entrepôts de stockage sécurisés
+                        </li>
+                        <li class="flex items-center gap-3 p-3 bg-stone-800/60 rounded-xl border border-stone-800 text-stone-200">
+                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0"></span>
+                            Serres de production modernes
+                        </li>
+                        <li class="flex items-center gap-3 p-3 bg-stone-800/60 rounded-xl border border-stone-800 text-stone-200">
+                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0"></span>
+                            Bâtiments d'élevage tout confort
+                        </li>
+                        <li class="flex items-center gap-3 p-3 bg-stone-800/60 rounded-xl border border-stone-800 text-stone-200">
+                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0"></span>
+                            Hangars de stockage du matériel
+                        </li>
+                        <li class="flex items-center gap-3 p-3 bg-stone-800/60 rounded-xl border border-stone-800 text-stone-200">
+                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0"></span>
+                            Ateliers intégrés de maintenance
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Équipements -->
+                <div>
+                    <div class="flex items-center gap-3 mb-8">
+                        <span class="p-3 bg-amber-950/50 text-amber-400 rounded-xl">
+                            <i class="fa-solid fa-tractor text-xl"></i>
+                        </span>
+                        <h2 class="text-3xl font-bold text-white font-serif">Équipements</h2>
+                    </div>
+                    <ul class="grid gap-3">
+                        <li class="flex items-center gap-3 p-3 bg-stone-800/60 rounded-xl border border-stone-800 text-stone-200">
+                            <span class="w-2.5 h-2.5 rounded-full bg-amber-500 shrink-0"></span>
+                            Tracteurs agricoles modernes & puissants
+                        </li>
+                        <li class="flex items-center gap-3 p-3 bg-stone-800/60 rounded-xl border border-stone-800 text-stone-200">
+                            <span class="w-2.5 h-2.5 rounded-full bg-amber-500 shrink-0"></span>
+                            Moissonneuses-batteuses nouvelle génération
+                        </li>
+                        <li class="flex items-center gap-3 p-3 bg-stone-800/60 rounded-xl border border-stone-800 text-stone-200">
+                            <span class="w-2.5 h-2.5 rounded-full bg-amber-500 shrink-0"></span>
+                            Systèmes d'irrigation à gestion intelligente
+                        </li>
+                        <li class="flex items-center gap-3 p-3 bg-stone-800/60 rounded-xl border border-stone-800 text-stone-200">
+                            <span class="w-2.5 h-2.5 rounded-full bg-amber-500 shrink-0"></span>
+                            Matériel de semis de précision chirurgicale
+                        </li>
+                        <li class="flex items-center gap-3 p-3 bg-stone-800/60 rounded-xl border border-stone-800 text-stone-200">
+                            <span class="w-2.5 h-2.5 rounded-full bg-amber-500 shrink-0"></span>
+                            Équipements d'élevage automatisés & sécurisés
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Engagements -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-emerald-600 font-bold uppercase tracking-widest text-sm">Nos Valeurs</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-stone-900 mt-2 font-serif">Nos Engagements</h2>
+                <div class="w-16 h-1 bg-emerald-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Qualité -->
+                <div class="bg-stone-50/50 p-6 rounded-2xl border border-stone-100 text-center hover:bg-white hover:shadow-md transition-all duration-300">
+                    <span class="w-16 h-16 mx-auto bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-award"></i>
+                    </span>
+                    <h3 class="text-xl font-bold text-stone-900 mb-3 font-serif">Qualité</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Produire des denrées d'exception répondant aux plus hauts standards de l'agriculture.</p>
+                </div>
+
+                <!-- Bien-être Animal -->
+                <div class="bg-stone-50/50 p-6 rounded-2xl border border-stone-100 text-center hover:bg-white hover:shadow-md transition-all duration-300">
+                    <span class="w-16 h-16 mx-auto bg-pink-50 text-pink-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-heart"></i>
+                    </span>
+                    <h3 class="text-xl font-bold text-stone-900 mb-3 font-serif">Bien-être animal</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Garantir des conditions d'élevage respectueuses et adaptées à l'épanouissement des animaux.</p>
+                </div>
+
+                <!-- Durabilité -->
+                <div class="bg-stone-50/50 p-6 rounded-2xl border border-stone-100 text-center hover:bg-white hover:shadow-md transition-all duration-300">
+                    <span class="w-16 h-16 mx-auto bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-seedling"></i>
+                    </span>
+                    <h3 class="text-xl font-bold text-stone-900 mb-3 font-serif">Durabilité</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Préserver notre terre fertile et nos ressources pour nourrir les générations futures.</p>
+                </div>
+
+                <!-- Tradition -->
+                <div class="bg-stone-50/50 p-6 rounded-2xl border border-stone-100 text-center hover:bg-white hover:shadow-md transition-all duration-300">
+                    <span class="w-16 h-16 mx-auto bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-people-roof"></i>
+                    </span>
+                    <h3 class="text-xl font-bold text-stone-900 mb-3 font-serif">Tradition familiale</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Maintenir fièrement les valeurs humaines transmises depuis la création de l'exploitation.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="bg-emerald-950 text-emerald-400 py-16 border-t border-emerald-900">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            
+            <!-- Icônes d'activités -->
+            <div class="flex justify-center items-center gap-6 mb-8 text-xl">
+                <span class="text-amber-400 hover:scale-110 transition-transform"><i class="fa-solid fa-wheat-awn"></i></span>
+                <span class="text-red-400 hover:scale-110 transition-transform"><i class="fa-solid fa-watermelon-slice"></i></span>
+                <span class="text-stone-300 hover:scale-110 transition-transform"><i class="fa-solid fa-cow"></i></span>
+                <span class="text-pink-400 hover:scale-110 transition-transform"><i class="fa-solid fa-pig"></i></span>
+            </div>
+
+            <h2 class="text-2xl font-bold text-white font-serif mb-2">Ferme des Trois Vallons</h2>
+            <p class="text-lg italic text-emerald-300 font-serif mb-8">
+                « La terre, la famille, l'avenir. »
+            </p>
+            
+            <div class="w-16 h-px bg-emerald-800 mx-auto mb-8"></div>
+
+            <p class="text-xs text-emerald-600">
+                &copy; <script>document.write(new Date().getFullYear())</script> Ferme des Trois Vallons. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
